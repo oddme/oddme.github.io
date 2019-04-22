@@ -14,9 +14,7 @@
 
 列表
 引用在文本前面添加&amp;gt;
-图片与链接图片: 图片地址可以使本地图片路径，或者图片网址网址：
-
-,"> 
+图片与链接图片: ![](图片地址)图片地址可以使本地图片路径，或者,"> 
     <meta name="author" content="zhuzhou"> 
     <link rel="alternative" href="atom.xml" title="oddme" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -69,20 +67,43 @@
         </div>
         <div class="content markdown">
             <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p># 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题</p>
-<p><img src="/asset/markdown-grammar/title.webp" alt></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p><img src="/asset/markdown-grammar/list.webp" alt></p>
-<h3 id="引用在文本前面添加-gt"><a href="#引用在文本前面添加-gt" class="headerlink" title="引用在文本前面添加&gt;"></a>引用在文本前面添加&gt;</h3><p><img src="/asset/markdown-grammar/import.webp" alt></p>
-<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><p>图片: <img src="图片地址" alt>图片地址可以使本地图片路径，或者图片网址<br>网址：<a href></a></p>
-<p><img src="/asset/markdown-grammar/link.webp" alt></p>
-<h3 id="粗体与斜体粗体"><a href="#粗体与斜体粗体" class="headerlink" title="粗体与斜体粗体"></a>粗体与斜体粗体</h3><p>用两个<em>包含一段文本就是粗体。    例：\</em>*<strong>粗体</strong>**<br>斜体：用一个*包含一段文本就是斜体<br>表格</p>
-<pre><code>|Tables|Are|Cool|
-|-------------|:-------------:|-----:|
-|col 3 is|right-aligned|$1600|
-|col 2 is|centered|$12|
-|zebra stripes|are neat|$1|
-</code></pre><p>生成的表格样式如下：<br>TablesAreCoolcol 3 isright-aligned$1600col 2 iscentered$12zebra stripesare neat$1</p>
+<p><img src="/asset/markdown-grammar/title.webp" alt="title"></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p><img src="/asset/markdown-grammar/list.webp" alt="list"></p>
+<h3 id="引用在文本前面添加-gt"><a href="#引用在文本前面添加-gt" class="headerlink" title="引用在文本前面添加&gt;"></a>引用在文本前面添加&gt;</h3><p><img src="/asset/markdown-grammar/import.webp" alt="recommend"></p>
+<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><p>图片: ![](图片地址)图片地址可以使本地图片路径，或者图片网址<br>网址：[]()</p>
+<p><img src="/asset/markdown-grammar/link.webp" alt="link"></p>
+<h3 id="粗体与斜体粗体"><a href="#粗体与斜体粗体" class="headerlink" title="粗体与斜体粗体"></a>粗体与斜体粗体</h3><p>用两个<em>包含一段文本就是粗体。    例：\</em>*<strong>粗体</strong>**<br>斜体：用一个*包含一段文本就是斜体</p>
+<p>###表格</p>
+<p>Tables | Are | Cool<br>:- | :-: | -:<br>col 3 is | right-aligned | $1600<br>col 2 is | centered | $12<br>zebra stripes | are neat | $1</p>
+<p>生成的表格样式如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td style="text-align:left">zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
 <h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><p>只需要用两个  `  把中间的代码包含起来</p>
-<p><img src="/asset/markdown-grammar/code.webp" alt></p>
+<p><img src="/asset/markdown-grammar/code.webp" alt="code"></p>
 <p>也可以使用tab键缩进4个空格</p>
 <h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线的语法只需要加三个-号或*</p>
 
