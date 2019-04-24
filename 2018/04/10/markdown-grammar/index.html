@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>hexo - oddme</title>
+    <title>markdown-grammar - oddme</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="oddme,"> 
-    <meta name="description" content="oddme blog,github一共需要需要3个仓库。
+    <meta name="description" content="oddme blog,标题# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题
 
-blog成品仓以oddme.github.io为例，用于放置blog主站文件。
-blog制品仓以hexoBlog为例，用于放置hexo相关代码以及blog文章m,"> 
+列表
+引用在文本前面添加&amp;gt;
+图片与链接图片: ![](图片地址)图片地址可以使本地图片路径，或者,"> 
     <meta name="author" content="zhuzhou"> 
     <link rel="alternative" href="atom.xml" title="oddme" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -38,7 +39,7 @@ blog制品仓以hexoBlog为例，用于放置hexo相关代码以及blog文章m,"
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">hexo</h3>
+    <h3 class="subtitle">markdown-grammar</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -56,139 +57,54 @@ blog制品仓以hexoBlog为例，用于放置hexo相关代码以及blog文章m,"
     <div class="section">
         <div class="article">
     <div class="main">
-        <h1 class="title">hexo</h1>
+        <h1 class="title">markdown-grammar</h1>
         <div class="stuff">
-            <span>四月 09, 2019</span>
+            <span>四月 10, 2018</span>
             
-  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/cs/">cs</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/hexo/">hexo</a></li></ul>
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/cs/">cs</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/markdown/">markdown</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h3 id="github"><a href="#github" class="headerlink" title="github"></a>github</h3><p>一共需要需要3个仓库。</p>
-<ul>
-<li>blog成品仓以oddme.github.io为例，用于放置blog主站文件。</li>
-<li>blog制品仓以hexoBlog为例，用于放置hexo相关代码以及blog文章md文件。</li>
-<li>blog评论仓库以gitalk为例，用于接入gitalk评论模块。</li>
-</ul>
-<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><pre><code>npm install -g hexo
-hexo init
-npm install
-hexo g //生成
-hexo s //启动本地服务
-hexo d //发布
-</code></pre><h3 id="hexo-主题"><a href="#hexo-主题" class="headerlink" title="hexo 主题"></a>hexo 主题</h3><p>你可以到官网找你喜欢的主题进行下载 <a href="https://link.zhihu.com/?target=https%3A//hexo.io/themes/" target="_blank" rel="noopener">hexo themes</a> <a href="https://www.zhihu.com/question/24422335/answer/46357100" target="_blank" rel="noopener">知乎：有哪些好看的 Hexo 主题？</a></p>
-<p>这里以<a href="https://github.com/Fechin/hexo-theme-diaspora" target="_blank" rel="noopener">Diaspora</a>为例</p>
-<p>在hexo目录下的themes目录中</p>
-<pre><code>git clone https://github.com/Fechin/hexo-theme-diaspora.git diaspora
-</code></pre><p>修改hexo配置文件 _config.yml 主题项设置为diaspora</p>
-<pre><code>...
-theme: diaspora
-...
-</code></pre><p>更新主题需要在更新时先备份 _config.yml 配置文件</p>
-<pre><code>cd themes/diaspora
-git pull
-</code></pre><p>主题source中的所有文件和hexo根目录source目录一样都会在编译后放到public根目录下。</p>
-<h4 id="新建文章模板"><a href="#新建文章模板" class="headerlink" title="新建文章模板"></a>新建文章模板</h4><pre><code>---
-title: My awesome title
-date: 2016-10-12 18:38:45
-categories: 
-    - 分类1
-    - 分类2
-tags: 
-    - 标签1
-    - 标签2
-mp3: http://domain.com/awesome.mp3
-cover: http://domain.com/awesome.jpg
----
-</code></pre><h4 id="创建分类页"><a href="#创建分类页" class="headerlink" title="创建分类页"></a>创建分类页</h4><ul>
-<li><p>新建一个页面命名为categories，使用hexo new page [filename] 的方式创建的页面不会作为文章生成在_post下，而是在_post同级目录生成新的页面目录。</p>
-<p>  hexo new page categories</p>
-</li>
-<li><p>编辑刚新建的页面，将页面类型设置为categories</p>
-</li>
-</ul>
-<pre><code>---
-title: categories
-date: 2014-12-22 12:39:04
-type: &quot;categories&quot;
----
-</code></pre><p>主题将自动为这个页面显示所有标签</p>
-<h4 id="创建标签页"><a href="#创建标签页" class="headerlink" title="创建标签页"></a>创建标签页</h4><ul>
-<li><p>新建一个页面命名为tags</p>
-<p>  hexo new page tags</p>
-</li>
-<li><p>编辑刚新建的页面，将页面类型设置为tags</p>
-</li>
-</ul>
-<pre><code>---
-title: tags
-date: 2014-12-22 12:39:04
-type: &quot;tags&quot;
----
-</code></pre><p>主题将自动为这个页面显示所有分类</p>
-<h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><pre><code># 头部菜单，title: link
-menu:
-    Whoami: /whoami
-    Github: https://github.com/Fechin
-    Twitter: https://twitter.com/FechinLi
-    分类: /categories
-    归档: /archives
-    标签云: /tags
-
-# 是否显示目录
-TOC: false
-
-# 是否自动播放音乐
-autoplay: false
-
-# 默认音乐（随机播放）
-mp3: 
-    - http://link.hhtjim.com/163/425570952.mp3
-    - http://link.hhtjim.com/163/425570952.mp3
-
-# 首页封面图, 为空时取文章的cover作为封面
-welcome_cover: # /img/welcome-cover.jpg
-
-# 默认文章封面图
-cover: /img/cover.jpg
-
-# Gitalk 评论插件（https://github.com/gitalk/gitalk）
-gitalk:
-    # 是否自动展开评论框
-    autoExpand: false
-    # 应用编号
-    clientID: &apos;&apos;
-    # 应用秘钥
-    clientSecret: &apos;&apos;
-    # issue仓库名
-    repo: &apos;&apos;
-    # Github名
-    owner: &apos;&apos;
-    # Github名
-    admin: [&apos;&apos;]
-    # Ensure uniqueness and length less than 50
-    id: location.pathname
-    # Facebook-like distraction free mode
-    distractionFreeMode: false
-
-# 网站关键字
-keywords: Fechin
-
-# 要使用google_analytics进行统计的话，这里需要配置ID
-google_analytics: 
-
-# 网站ico
-favicon: /img/favicon.png
-
-# rss文件
-rss: atom.xml
-</code></pre><h4 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h4><p>diaspora主题评论模块使用的是gitalk</p>
-<h5 id="创建github-application"><a href="#创建github-application" class="headerlink" title="创建github application"></a>创建github application</h5><p>gitalk 需要一个github application，<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2Fsettings%2Fapplications%2Fnew" target="_blank" rel="noopener">点击这里申请</a></p>
-<p>填写参数如下<br><img src="/asset/hexo/gitapplication.png" alt="创建application"></p>
-<p>获取Client ID 和 Client Secret 填入diaspora配置中</p>
-<p><img src="/asset/hexo/secret.png" alt="client ID"></p>
-<p>至此，hexo配置就全部完成了可以开始写文章了</p>
+            <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p># 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题</p>
+<p><img src="/asset/markdown-grammar/title.webp" alt="title"></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p><img src="/asset/markdown-grammar/list.webp" alt="list"></p>
+<h3 id="引用在文本前面添加-gt"><a href="#引用在文本前面添加-gt" class="headerlink" title="引用在文本前面添加&gt;"></a>引用在文本前面添加&gt;</h3><p><img src="/asset/markdown-grammar/import.webp" alt="recommend"></p>
+<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><p>图片: ![](图片地址)图片地址可以使本地图片路径，或者图片网址<br>网址：[]()</p>
+<p><img src="/asset/markdown-grammar/link.webp" alt="link"></p>
+<h3 id="粗体与斜体粗体"><a href="#粗体与斜体粗体" class="headerlink" title="粗体与斜体粗体"></a>粗体与斜体粗体</h3><p>用两个<em>包含一段文本就是粗体。    例：\</em>*<strong>粗体</strong>**<br>斜体：用一个*包含一段文本就是斜体</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>Tables | Are | Cool<br>:- | :-: | -:<br>col 3 is | right-aligned | $1600<br>col 2 is | centered | $12<br>zebra stripes | are neat | $1</p>
+<p>生成的表格样式如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td style="text-align:left">zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><p>只需要用两个  `  把中间的代码包含起来</p>
+<p><img src="/asset/markdown-grammar/code.webp" alt="code"></p>
+<p>也可以使用tab键缩进4个空格</p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线的语法只需要加三个-号或*</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
