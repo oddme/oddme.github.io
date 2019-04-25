@@ -75,7 +75,36 @@
 <p><strong>外码</strong> ：一个属性（或属性组），它不是码，但是它别的表的码，它就是外码。</p>
 <p><strong>候选码</strong>： 若关系中的某一属性或属性组的值能唯一的标识一个元组，而其任何真子集都不能再标识，则称该属性组为（超级码）候选码。</p>
 <h3 id="第一范式（1NF）：属性不可分"><a href="#第一范式（1NF）：属性不可分" class="headerlink" title="第一范式（1NF）：属性不可分"></a>第一范式（1NF）：属性不可分</h3><p>1NF是对属性的原子性约束，要求属性具有原子性，不可再分解）</p>
-<p>name——–tel—————————–age<br>————手机———–座机—————-<br>Josh——–13612345678—-021－9876543——22<br>Wang——–13988776655—-010－1234567——21</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">name</th>
+<th style="text-align:center">tel</th>
+<th style="text-align:center">tel</th>
+<th style="text-align:center">age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"> -</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">座机</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">Josh</td>
+<td style="text-align:center">13612345678</td>
+<td style="text-align:center">021－9876543</td>
+<td style="text-align:center">22</td>
+</tr>
+<tr>
+<td style="text-align:center">Wang</td>
+<td style="text-align:center">13988776655</td>
+<td style="text-align:center">010－1234567</td>
+<td style="text-align:center">21</td>
+</tr>
+</tbody>
+</table>
 <p>很明显，tel这个属性还可以进行分解，分解成手机和座机这两个属性，不满足第一范式的数据库，不是关系数据库！所以，我们在任何关系数据库管理系统中，做不出这样的“表”来。</p>
 <h3 id="第二范式（2NF）：符合1NF，并且非主属性完全依赖于码。"><a href="#第二范式（2NF）：符合1NF，并且非主属性完全依赖于码。" class="headerlink" title="第二范式（2NF）：符合1NF，并且非主属性完全依赖于码。"></a>第二范式（2NF）：符合1NF，并且非主属性完全依赖于码。</h3><p>2NF是对记录的惟一性约束，要求记录有惟一标识，即实体的惟一性，更通俗说有主键ID</p>
 <p>如果这都不能理解，只能看看如下科学的解释了：</p>
